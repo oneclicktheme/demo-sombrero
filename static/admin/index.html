@@ -3,26 +3,10 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin - Demo Sombrero Theme</title>
-    <!-- Include the script that builds the page and powers Netlify CMS -->
-    <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <title>Admin - Content Manager</title>
 </head>
 <body>
-<script>
-  /**
-   * This script is taken from:
-   * https://www.netlifycms.org/docs/add-to-your-site/#add-the-netlify-identity-widget
-   */
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on('init', function(user) {
-      if (!user) {
-        window.netlifyIdentity.on('login', function() {
-          document.location.href = '/admin/';
-        });
-      }
-    });
-  }
-</script>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script src="https://unpkg.com/netlify-cms@^2.9.6/dist/netlify-cms.js"></script>
 </body>
 </html>
