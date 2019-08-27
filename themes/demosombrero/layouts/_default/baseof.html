@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{ partial "head" .}}
+
+<body>
+
+<!--Demo-->
+<section class="oneclicktheme-header">
+    <div class="container mx-auto">
+        <div class="flex-center-between">
+            <div class="logo-wrap">
+                <a class="inline-block" href="https://www.oneclicktheme.com/" target="_blank">
+                    <img src="/img/demo/oneclicktheme-logo.png" alt="One Click Theme">
+                </a>
+            </div>
+            <div class="flex items-center">
+                <div class="text-black-light mr-4">
+                    <div class="flex items-center">
+                        <h3 class="font-bold mr-4 text-sm">Dynamic Text Color</h3>
+                        <div class="flex items-center">
+                            <div class="flex items-center">
+                                <label class="text-sm mr-2">Color:</label>
+                                <input class="cursor-pointer w-6 h-6 xl:h-10 outline-none xl:w-10 input-color-picker"
+                                       type="color" data-id="color" name="Color">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <span class="inline-block mr-2 text-sm text-black-light">If you like the theme then</span>
+                    <button class="outline-none modal-toggle btn relative text-sm inline-block
+                 px-4 py-2 rounded text-sm uppercase font-bold" href="#">Let's start</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hidden xl:block modal">
+        <div class="modal-overlay modal-toggle"></div>
+        <div class="modal-wrapper modal-transition">
+            <button class="modal-close modal-toggle">x</button>
+            <div class="modal-body">
+                <div class="modal-content">
+                    <div class="flex flex-wrap -mx-4">
+                        <div class="w-1/2 px-4">
+                            <img src="/img/demo/product_manager.svg" alt="Illustration">
+                        </div>
+                        <div class="w-1/2 px-4">
+                            <div class="sign-up-form-wrap">
+                                <div>
+                                    <h2 class="capitalize font-black text-3xl">To get started</h2>
+                                    <p class="text-black-light text-xs">Please fill the necessary information for your site</p>
+                                </div>
+                                {{ partial "signup-form" }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End Demo-->
+
+{{ partial "header" . }}
+
+<main>
+    {{ block "main" . }} {{end}}
+</main>
+
+{{ partial "footer" . }}
+
+
+<!-- Scripts -->
+
+{{ $scripts := resources.Get "js/vendor.js" | fingerprint }}
+{{ with $scripts }}
+<script type="text/javascript" src="{{ .Permalink | relURL }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous" defer></script>
+{{ $.Scratch.Set "scripts" . }}
+{{ end }}
+
+{{ $scripts := resources.Get "js/app.js" | fingerprint }}
+{{ with $scripts }}
+<script type="text/javascript" src="{{ .Permalink | relURL }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous" defer></script>
+{{ $.Scratch.Set "scripts" . }}
+{{ end }}
+</body>
+
+</html>

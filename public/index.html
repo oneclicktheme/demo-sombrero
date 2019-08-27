@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -12,22 +12,24 @@
 
     
 
-    <title></title>
+    <title>Demo Sombrero</title>
 
     <meta name="generator" content="Hugo 0.55.1" />
 
     <!-- Main Stylesheet --> 
-    <link rel="stylesheet" href="/css/tailwind.min.089c6f52133e8fe1c99fce3cbdfb6fd27b62cb81236b36e36f436cf0758a6c9d.css" integrity="sha256-CJxvUhM&#43;j&#43;HJn848vftv0ntiy4Ejazbjb0Ns8HWKbJ0=" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Pinyon+Script" rel="stylesheet">
+    <link rel="stylesheet" href="/css/vendor.min.ef06d6974e59e9ab5bc10dc10164368c47421a745b4ae2fae2327537071173a1.css" integrity="sha256-7wbWl05Z6atbwQ3BAWQ2jEdCGnRbSuL64jJ1NwcRc6E=" crossorigin="anonymous">
     
     
-    <link rel="stylesheet" href="/css/app.min.649f508ded8ef1ef497bec393f9a804ba16f9704033b6aaed519c37a37f8dfbf.css" integrity="sha256-ZJ9Qje2O8e9Je&#43;w5P5qAS6FvlwQDO2qu1RnDejf4378=" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/app.min.ae8f2dc0e09613bb8cbf36c32a40d980abb36901df690b2983b4a749c4eb310a.css" integrity="sha256-ro8twOCWE7uMvzbDKkDZgKuzaQHfaQspg7SnScTrMQo=" crossorigin="anonymous">
     
     
 
 </head>
 
 
-<body class="leading-normal antialiased font-body leading-snug">
+<body>
 
 
 <section class="hidden md:block oneclicktheme-header px-4 py-2">
@@ -38,23 +40,24 @@
                     <img class="h-10 inline-block rounded-full shadow-md w-10" src="/img/oneclicktheme-logo.png" alt="One Click Theme">
                 </a>
             </div>
-            <div class="text-black-light">
-                <div class="flex items-center">
-                    <h3 class="font-bold mr-4 text-sm">Dynamic Text Color</h3>
+            <div class="flex items-center">
+                <div class="text-black-light mr-4">
                     <div class="flex items-center">
+                        <h3 class="font-bold mr-4 text-sm">Dynamic Text Color</h3>
                         <div class="flex items-center">
-                            <label class="text-sm mr-2">Color:</label>
-                            <input class="cursor-pointer w-6 h-6 xl:h-10 outline-none xl:w-10 input-color-picker"
-                                   type="color" data-id="color" name="Color">
+                            <div class="flex items-center">
+                                <label class="text-sm mr-2">Color:</label>
+                                <input class="cursor-pointer w-6 h-6 xl:h-10 outline-none xl:w-10 input-color-picker"
+                                       type="color" data-id="color" name="Color">
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="flex-1 xl:flex-none text-center xl:text-left mt-3 xl:mt-0">
-                <span class="inline-block mr-2 text-sm text-black-light">If you like the theme then</span>
-                <button class="outline-none modal-toggle btn relative text-sm inline-block
-                 px-4 py-2 rounded text-sm uppercase font-bold" href="#">Let's start
-                </button>
+                <div class="">
+                    <span class="inline-block mr-2 text-sm text-black-light">If you like the theme then</span>
+                    <button class="outline-none modal-toggle btn relative text-sm inline-block
+                 px-4 py-2 rounded text-sm uppercase font-bold" href="#">Let's start</button>
+                </div>
             </div>
         </div>
     </div>
@@ -102,189 +105,529 @@
     </div>
 </section>
 
-<canvas class="absolute"></canvas>
-<div class="relative text-base-color">
-    <div class="lg:h-screen  flex flex-wrap">
+
+
+<header>
+    <nav class="navbar navbar-default navbar-fixed-top probootstrap-navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html" title="uiCookies:FineOak">FineOak</a>
+            </div>
+
+            <div id="navbar-collapse" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#" data-nav-section="welcome">Welcome</a></li>
+                    <li><a href="#" data-nav-section="specialties">Specialties</a></li>
+                    <li><a href="#" data-nav-section="menu">Menu</a></li>
+                    <li><a href="#" data-nav-section="reservation">Reservation</a></li>
+                    <li><a href="#" data-nav-section="events">Events</a></li>
+                    <li><a href="#" data-nav-section="contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<main>
+    
+<section class="flexslider" data-section="welcome">
+    <ul class="slides">
+        <li style="background-image: url('/img/hero_bg_1.jpg')" class="overlay" data-stellar-background-ratio="0.5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="probootstrap-slider-text text-center probootstrap-animate probootstrap-heading">
+                            <h1 class="primary-heading">Welcome</h1>
+                            <h3 class="secondary-heading">The Resto</h3>
+                            <p class="sub-heading">A free bootstrap website template by <a href="https://uicookies.com">uicookies.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li style="background-image: url('/img/hero_bg_2.jpg')" class="overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="probootstrap-slider-text text-center probootstrap-animate probootstrap-heading">
+                            <h1 class="primary-heading">Dine</h1>
+                            <h3 class="secondary-heading">With Us</h3>
+                            <p class="sub-heading">A free bootstrap website template by <a href="https://uicookies.com">uicookies.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </li>
+        <li style="background-image: url('/img/hero_bg_3.jpg')" class="overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="probootstrap-slider-text text-center probootstrap-animate probootstrap-heading">
+                            <h1 class="primary-heading">Enjoy</h1>
+                            <h3 class="secondary-heading">With Us</h3>
+                            <p class="sub-heading">A free bootstrap website template by <a href="https://uicookies.com">uicookies.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</section>
+
+<section class="probootstrap-section probootstrap-bg-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 text-center probootstrap-animate">
+                <div class="probootstrap-heading dark">
+                    <h1 class="primary-heading">Discover</h1>
+                    <h3 class="secondary-heading">Our Store</h3>
+                    <span class="seperator">* * *</span>
+                </div>
+                <p>Voluptatibus quaerat laboriosam fugit non Ut consequatur animi est molestiae enim a voluptate totam natus modi debitis dicta impedit voluptatum quod sapiente illo saepe explicabo quisquam perferendis labore et illum suscipit</p>
+                <p><a href="#" class="probootstrap-custom-link">About Us</a></p>
+            </div>
+            <div class="col-md-6 col-md-push-1 probootstrap-animate">
+                <p><img src="img/img_1.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></p>
+            </div>
+        </div>
         
-<section class="w-full h-full lg:w-1/2">
-    <div class="h-full flex items-center justify-center">
-        <img class="block w-full h-full object-cover" src="/img/hero-profile.jpg"
-             alt="" style="width: 500px;height: 500px;border: 15px solid #fff;">
     </div>
 </section>
 
-
-        
-<section class="w-full lg:w-1/2">
-    
-<section class="flex h-full items-center flex-wrap px-20 py-5">
-    
-    <div>
-        <h1 class="title font-bold text-2xl lg:text-3xl xll:text-5xl mb-10">I'm <span class="text-primary-text">John Doe</span></h1>
-        <div class="mb-10">
-            <span class="font-bold text-5xl typewrite" data-period="2000"
-                  data-type='["Creative Coder"]'>
-                <span class="wrap"></span>
-            </span>
+<section class="probootstrap-section-bg overlay" style="background-image: url('/img/hero_bg_2.jpg');" data-stellar-background-ratio="0.5"
+         data-section="specialties">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center probootstrap-animate">
+                <div class="probootstrap-heading">
+                    <h2 class="primary-heading">Discover</h2>
+                    <h3 class="secondary-heading">Our Specialties</h3>
+                </div>
+            </div>
         </div>
-
-        <p class="mb-12">Dolore aute duis duis exercitation dolor mollit est labore cupidatat qui occaecat sunt reprehenderit deserunt. Qui sunt in laborum nostrud cillum ex nulla aliqua. Culpa laboris velit veniam magna aute minim pariatur sunt eu Lorem eiusmod voluptate Lorem.</p>
-
-        
-        <a class="text-primary-text transition" href="http://www.africau.edu/images/default/sample.pdf" target="">Download Resume</a>
-        
     </div>
-    
-    
+</section>
+
+<section class="probootstrap-section">
+    <div class="container">
+        <div class="row">
+            <div class="probootstrap-cell-retro">
+                <div class="half">
+
+                    <div class="probootstrap-cell probootstrap-animate" data-animate-effect="fadeIn">
+                        <div class="image" style="background-image: url(img/img_square_1.jpg);"></div>
+                        <div class="text text-center">
+                            <h3>Baked Potato Pizza</h3>
+                            <p>Laboriosam pariatur modi praesentium deleniti molestiae officiis atque numquam.</p>
+                            <p class="price">$20.99</p>
+                        </div>
+                    </div>
+                    <div class="probootstrap-cell reverse probootstrap-animate" data-animate-effect="fadeIn">
+                        <div class="image" style="background-image: url(img/img_square_2.jpg);"></div>
+                        <div class="text text-center">
+                            <h3>Salted Fried Chicken</h3>
+                            <p>Laboriosam pariatur modi praesentium deleniti molestiae officiis atque numquam.</p>
+                            <p class="price">$19.99</p>
+                        </div>
+                    </div>
+                    <div class="probootstrap-cell probootstrap-animate" data-animate-effect="fadeIn">
+                        <div class="image" style="background-image: url(img/img_square_3.jpg);"></div>
+                        <div class="text text-center">
+                            <h3>Imported Salmon Steak</h3>
+                            <p>Laboriosam pariatur modi praesentium deleniti molestiae officiis atque numquam.</p>
+                            <p class="price">$20.99</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="half">
+
+                    <div class="probootstrap-cell probootstrap-animate" data-animate-effect="fadeIn">
+                        <div class="image" style="background-image: url(img/img_square_4.jpg);"></div>
+                        <div class="text text-center">
+                            <h3>Roast Beef (4 sticks)</h3>
+                            <p>Laboriosam pariatur modi praesentium deleniti molestiae officiis atque numquam.</p>
+                            <p class="price">$32.99</p>
+                        </div>
+                    </div>
+                    <div class="probootstrap-cell reverse probootstrap-animate" data-animate-effect="fadeIn">
+                        <div class="image" style="background-image: url(img/img_square_5.jpg);"></div>
+                        <div class="text text-center">
+                            <h3>Tuna Roast Source</h3>
+                            <p>Laboriosam pariatur modi praesentium deleniti molestiae officiis atque numquam.</p>
+                            <p class="price">$25.99</p>
+                        </div>
+                    </div>
+                    <div class="probootstrap-cell probootstrap-animate" data-animate-effect="fadeIn">
+                        <div class="image" style="background-image: url(img/img_square_1.jpg);"></div>
+                        <div class="text text-center">
+                            <h3>Fried Potatoes with Garlic</h3>
+                            <p>Laboriosam pariatur modi praesentium deleniti molestiae officiis atque numquam.</p>
+                            <p class="price">$32.99</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="probootstrap-section-bg overlay" style="background-image: url(img/hero_bg_4.jpg);"  data-stellar-background-ratio="0.5"  data-section="menu">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center probootstrap-animate">
+                <div class="probootstrap-heading">
+                    <h2 class="primary-heading">Discover</h2>
+                    <h3 class="secondary-heading">Our Menu</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="probootstrap-section probootstrap-bg-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <ul class="menus">
+                    <li>
+                        <figure class="image"><img src="img/img_square_1.jpg" alt="Free Bootstrap Template by uicookies.com"></figure>
+                        <div class="text">
+                            <span class="price">$22.99</span>
+                            <h3>Fried Potatoes with Garlic</h3>
+                            <p>Crab / Potatoes / Rice</p>
+                        </div>
+                    </li>
+                    <li>
+                        <figure class="image"><img src="img/img_square_2.jpg" alt="Free Bootstrap Template by uicookies.com"></figure>
+                        <div class="text">
+                            <span class="price">$22.99</span>
+                            <h3>Tuna Roast Source</h3>
+                            <p>Crab / Potatoes / Rice</p>
+                        </div>
+                    </li>
+                    <li>
+                        <figure class="image"><img src="img/img_square_3.jpg" alt="Free Bootstrap Template by uicookies.com"></figure>
+                        <div class="text">
+                            <span class="price">$22.99</span>
+                            <h3>Roast Beef (4 sticks)</h3>
+                            <p>Crab / Potatoes / Rice</p>
+                        </div>
+                    </li>
+                    <li>
+                        <figure class="image"><img src="img/img_square_4.jpg" alt="Free Bootstrap Template by uicookies.com"></figure>
+                        <div class="text">
+                            <span class="price">$22.99</span>
+                            <h3>Salted Fried Chicken</h3>
+                            <p>Crab / Potatoes / Rice</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <ul class="menus">
+                    <li>
+                        <figure class="image"><img src="img/img_square_5.jpg" alt="Free Bootstrap Template by uicookies.com"></figure>
+                        <div class="text">
+                            <span class="price">$22.99</span>
+                            <h3>Baked Potato Pizza</h3>
+                            <p>Crab / Potatoes / Rice</p>
+                        </div>
+                    </li>
+                    <li>
+                        <figure class="image"><img src="img/img_square_1.jpg" alt="Free Bootstrap Template by uicookies.com"></figure>
+                        <div class="text">
+                            <span class="price">$22.99</span>
+                            <h3>Fried Potatoes with Garlic</h3>
+                            <p>Crab / Potatoes / Rice</p>
+                        </div>
+                    </li>
+                    <li>
+                        <figure class="image"><img src="img/img_square_2.jpg" alt="Free Bootstrap Template by uicookies.com"></figure>
+                        <div class="text">
+                            <span class="price">$22.99</span>
+                            <h3>Salted Fried Chicken</h3>
+                            <p>Crab / Potatoes / Rice</p>
+                        </div>
+                    </li>
+                    <li>
+                        <figure class="image"><img src="img/img_square_3.jpg" alt="Free Bootstrap Template by uicookies.com"></figure>
+                        <div class="text">
+                            <span class="price">$22.99</span>
+                            <h3>Tuna Roast Source</h3>
+                            <p>Crab / Potatoes / Rice</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="probootstrap-section-bg overlay" style="background-image: url(img/hero_bg_5.jpg);"  data-stellar-background-ratio="0.5" data-section="reservation">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center probootstrap-animate">
+                <div class="probootstrap-heading">
+                    <h2 class="primary-heading">Booking</h2>
+                    <h3 class="secondary-heading">Reserve A Table</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="probootstrap-section probootstrap-bg-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 probootstrap-animate">
+                <form method="post" class="probootstrap-form">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="people">How Many People</label>
+                                <div class="form-field">
+                                    <i class="icon icon-chevron-down"></i>
+                                    <select name="people" id="people" class="form-control">
+                                        <option value="#">1 people</option>
+                                        <option value="#">2 people</option>
+                                        <option value="#">3 people</option>
+                                        <option value="#">4+ people</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="date">Date</label>
+                                <div class="form-field">
+                                    <i class="icon icon-calendar"></i>
+                                    <input type="text" id="date" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="time">Time</label>
+                                <div class="form-field">
+                                    <i class="icon icon-clock"></i>
+                                    <input type="text" id="time" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <div class="form-field">
+                                    <i class="icon icon-user2"></i>
+                                    <input type="text" id="name" class="form-control" placeholder="Your full name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <div class="form-field">
+                                    <i class="icon icon-mail"></i>
+                                    <input type="text" id="email" class="form-control" placeholder="Your email address">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <div class="form-field">
+                                    <i class="icon icon-phone"></i>
+                                    <input type="text" id="phone" class="form-control" placeholder="Your phone">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-md-offset-4">
+                            <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-lg btn-primary btn-block">
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="probootstrap-section-bg overlay" style="background-image: url(img/hero_bg_4.jpg);"  data-stellar-background-ratio="0.5" data-section="events">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center probootstrap-animate">
+                <div class="probootstrap-heading">
+                    <h2 class="primary-heading">Upcoming</h2>
+                    <h3 class="secondary-heading">Our Events</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="probootstrap-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-4 probootstrap-animate">
+                <div class="probootstrap-block-image">
+                    <figure><img src="img/img_square_2.jpg" alt="Free Bootstrap Template by uicookies.com"></figure>
+                    <div class="text">
+                        <span class="date">June 29, 2017</span>
+                        <h3><a href="#">Laboriosam Quod Dignissimos</a></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos quibusdam soluta at.</p>
+                        <p class=""><a href="#" class="probootstrap-custom-link link-sm">Read More</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 probootstrap-animate">
+                <div class="probootstrap-block-image">
+                    <figure><img src="img/img_square_3.jpg" alt="Free Bootstrap Template by uicookies.com"></figure>
+                    <div class="text">
+                        <span class="date">June 29, 2017</span>
+                        <h3><a href="#">Laboriosam Quod Dignissimos</a></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos quibusdam soluta at.</p>
+                        <p class=""><a href="#" class="probootstrap-custom-link link-sm">Read More</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 probootstrap-animate">
+                <div class="probootstrap-block-image">
+                    <figure><img src="img/img_square_4.jpg" alt="Free Bootstrap Template by uicookies.com"></figure>
+                    <div class="text">
+                        <span class="date">June 29, 2017</span>
+                        <h3><a href="#">Laboriosam Quod Dignissimos</a></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos quibusdam soluta at.</p>
+                        <p class=""><a href="#" class="probootstrap-custom-link link-sm">Read More</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="probootstrap-section probootstrap-bg-white" data-section="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 text-center probootstrap-animate">
+                <div class="probootstrap-heading dark">
+                    <h1 class="primary-heading">Contact</h1>
+                    <h3 class="secondary-heading">Let's Chat</h3>
+                </div>
+                <p>Voluptatibus quaerat laboriosam fugit non Ut consequatur animi est molestiae enim a voluptate totam natus modi debitis dicta impedit voluptatum quod sapiente illo saepe explicabo quisquam perferendis labore et illum suscipit</p>
+            </div>
+            <div class="col-md-6 col-md-push-1 probootstrap-animate">
+                <form method="post" class="probootstrap-form">
+                    <div class="form-group">
+                        <label for="c_name">Your Name</label>
+                        <div class="form-field">
+                            <input type="text" id="c_name" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="c_email">Your Email</label>
+                        <div class="form-field">
+                            <input type="text" id="c_email" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="c_message">Your Message</label>
+                        <div class="form-field">
+                            <textarea name="c_message" id="c_message" cols="30" rows="10" class="form-control"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" name="c_submit" id="c_submit" value="Send Message" class="btn btn-primary btn-lg">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+
 <footer>
-    <div class="container mx-auto">
-        
-        <div class="flex flex-wrap -mx-4">
-
-            <div class="w-full md:w-1/2 px-4">
-                <div>
-                    <h2 class="uppercase mb-4">Connect</h2>
-                    <ul>
-                        
-                        
-                        <li class="mb-2">
-                            <a href="https://www.linkedin.com/" target="_blank"
-                               class="text-primary-text flex items-center transition">
-                                <svg class="fill-current w-4 h-4 mr-4">
-                                    <use xlink:href="/img/icons.svg#ic-linkedin" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
-                                </svg>
-                                <span class="inline-block">Linkedin</span>
-                            </a>
-                        </li>
-                        
-
-                        
-                        
-                        <li class="mb-2">
-                            <a href="https://www.medium.com/" target="_blank"
-                               class="text-primary-text flex items-center transition">
-                                <svg class="fill-current w-4 h-4 mr-4">
-                                    <use xlink:href="/img/icons.svg#ic-medium" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
-                                </svg>
-                                <span class="inline-block">Medium</span>
-                            </a>
-                        </li>
-                        
-
-                        
-                        
-                        <li class="mb-2">
-                            <a href="https://www.github.com/" target="_blank"
-                               class="text-primary-text flex items-center transition">
-                                <svg class="fill-current w-4 h-4 mr-4">
-                                    <use xlink:href="/img/icons.svg#ic-github" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
-                                </svg>
-                                <span class="inline-block">Twitter</span>
-                            </a>
-                        </li>
-                        
-
-                        
-                        
-                        <li class="mb-2">
-                            <a href="https://www.codepen.com/" target="_blank"
-                               class="text-primary-text flex items-center transition">
-                                <svg class="fill-current w-4 h-4 mr-4">
-                                    <use xlink:href="/img/icons.svg#ic-codepen" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
-                                </svg>
-                                <span class="inline-block">Codepen</span>
-                            </a>
-                        </li>
-                        
-                    </ul>
+    <section class="probootstrap-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 probootstrap-animate">
+                    <div class="probootstrap-footer-widget">
+                        <h3>Locations</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p> 198 West 21th Street, Suite 721 <br> New York NY 10016</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p> 198 West 21th Street, Suite 721 <br> New York NY 10016</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 probootstrap-animate">
+                    <div class="probootstrap-footer-widget">
+                        <h3>Open Hours</h3>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p>Monday - Thursday <br> 5:30pm - 10:00pm</p>
+                            </div>
+                            <div class="col-md-4">
+                                <p>Friday - Sunday <br> 5:30pm - 10:00pm</p>
+                            </div>
+                            <div class="col-md-4">
+                                <p>Available for Catering <br> Email or Call Us</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div class="w-full md:w-1/2">
-                <div>
-                    <h2 class="uppercase mb-4">Social</h2>
-                    <ul>
-                        
-                        
-                        <li class="mb-2">
-                            <a href="https://www.facebook.com/" target="_blank"
-                               class="text-primary-text flex items-center transition">
-                                <svg class="fill-current w-4 h-4 mr-4">
-                                    <use xlink:href="/img/icons.svg#ic-facebook" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
-                                </svg>
-
-                                <span class="inline-block">Facebook</span>
-                            </a>
-                        </li>
-                        
-
-                        
-                        
-                        <li class="mb-2">
-                            <a href="https://www.twitter.com/" target="_blank"
-                               class="text-primary-text flex items-center transition">
-                                <svg class="fill-current w-4 h-4 mr-4">
-                                    <use xlink:href="/img/icons.svg#ic-twitter" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
-                                </svg>
-                                <span class="inline-block">Twitter</span>
-                            </a>
-                        </li>
-                        
-
-                        
-                        
-                        <li>
-                            <a href="https://www.instagram.com/" target="_blank"
-                               class="text-primary-text flex items-center transition">
-                                <svg class="fill-current w-4 h-4 mr-4">
-                                    <use xlink:href="/img/icons.svg#ic-instagram" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
-                                </svg>
-                                <span class="inline-block">Instagram</span>
-                            </a>
-                        </li>
-                        
+        </div>
+    </section>
+    <section class="probootstrap-copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <p class="copyright-text">&copy; 2017 <a href="https://uicookies.com/">uiCookies:Resto</a>. All Rights Reserved. Images by <a href="https://graphicburger.com/">GraphicBurger</a> &amp; <a href="https://unsplash.com/">Unsplash</a></p>
+                </div>
+                <div class="col-md-4">
+                    <ul class="probootstrap-footer-social right">
+                        <li><a href="#"><i class="icon-twitter"></i></a></li>
+                        <li><a href="#"><i class="icon-facebook"></i></a></li>
+                        <li><a href="#"><i class="icon-instagram"></i></a></li>
                     </ul>
                 </div>
             </div>
         </div>
-        
-        <div class="mt-10 flex flex-wrap justify-center xl:justify-between items-center text-sm">
-            <div class="text-base-color text-center xl:text-left">
-                <span>&copy; 2019</span>
-                <a href="https://www.oneclicktheme.com/"
-                   class="text-primary-text" target="_blank">OneClickTheme</a>
-                <span>- Demo Zaits Theme. All rights reserved</span></div>
-        </div>
-    </div>
+    </section>
 </footer>
 
 
-</section>
-
-
-</section>
-
-    </div>
-</div>
-
-
-
-
-<script type="text/javascript" src="/js/manifest.c1970e6c76ac7de6e0bc90badec91d40aec5bb2f24a91030c6d3f4fbbc1a3951.js" integrity="sha256-wZcObHasfebgvJC63skdQK7Fuy8kqRAwxtP0&#43;7waOVE=" crossorigin="anonymous" defer></script>
 
 
 
 
 
-<script type="text/javascript" src="/js/vendor.d71c54efccd7fab14b14f5cf5fe46740f7783bc091bdc55165fbece9deb4b410.js" integrity="sha256-1xxU78zX&#43;rFLFPXPX&#43;RnQPd4O8CRvcVRZfvs6d60tBA=" crossorigin="anonymous" defer></script>
+<script type="text/javascript" src="/js/vendor.f9c4c2b2f62b079e97d3c7e4ba39a82b3d6b46d325b3370af9eea84cbed96582.js" integrity="sha256-&#43;cTCsvYrB56X08fkujmoKz1rRtMlszcK&#43;e6oTL7ZZYI=" crossorigin="anonymous" defer></script>
 
 
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.1/dat.gui.min.js"></script>
 
 
-
-<script type="text/javascript" src="/js/app.be7dd7f8f3840c86c3a5174c656f345a5f90606959b712853ac6339cca113de7.js" integrity="sha256-vn3X&#43;POEDIbDpRdMZW80Wl&#43;QYGlZtxKFOsYznMoRPec=" crossorigin="anonymous" defer></script>
+<script type="text/javascript" src="/js/app.d9f76e88b504f91f50b789de8cdd8784de3016ab4987b50002efd48f0ec0eb9a.js" integrity="sha256-2fduiLUE&#43;R9Qt4nejN2HhN4wFqtJh7UAAu/Ujw7A65o=" crossorigin="anonymous" defer></script>
 
 
 </body>
